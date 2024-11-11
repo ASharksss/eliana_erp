@@ -1,0 +1,43 @@
+.wrapper {
+    border: 1px solid #CCCCCC;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+    height: 380px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.blocks {
+    display: flex;
+    gap: 1.8rem;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: .5rem 0;
+}
+
+.item {
+    display: flex;
+    min-width: fit-content;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+
+}
