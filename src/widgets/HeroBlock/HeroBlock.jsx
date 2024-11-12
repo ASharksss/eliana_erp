@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './her_block.module.css'
-import bottle from '../../assets/bottle.png'
 import WidgetButton from "../../ui/button/WidgetButton";
+import HeroItem from "./HeroItem";
 
 const HeroBlock = () => {
   return (
@@ -9,30 +9,12 @@ const HeroBlock = () => {
       <div>
         <h1 className={styles.title}>Склад</h1>
         <div className={styles.blocks}>
-          <div className={styles.item}>
-            <img src={bottle} alt="" className={styles.image}/>
-            <span>Фитиля</span>
-          </div>
-          <div className={styles.item}>
-            <img src={bottle} alt="" className={styles.image}/>
-            <span>Фитиля</span>
-          </div>
-          <div className={styles.item}>
-            <img src={bottle} alt="" className={styles.image}/>
-            <span>Фитиля</span>
-          </div>
-          <div className={styles.item}>
-            <img src={bottle} alt="" className={styles.image}/>
-            <span>Фитиля</span>
-          </div>
-          <div className={styles.item}>
-            <img src={bottle} alt="" className={styles.image}/>
-            <span>Фитиля</span>
-          </div>
-          <div className={styles.item}>
-            <img src={bottle} alt="" className={styles.image}/>
-            <span>Фитиля</span>
-          </div>
+          <HeroItem/>
+          <HeroItem/>
+          <HeroItem/>
+          <HeroItem/>
+          <HeroItem/>
+          <HeroItem/>
         </div>
       </div>
       <div>

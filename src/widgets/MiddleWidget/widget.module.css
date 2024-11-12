@@ -1,0 +1,29 @@
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    padding: .75rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.title:before {
+    content: "";
+    position: absolute; /* Позиционируем его относительно родительского элемента */
+    bottom: -20px; /* Располагаем полоску внизу */
+    left: 0; /* Начинаем с левого края */
+    width: 100%; /* Полоска по ширине элемента */
+    height: 1px; /* Толщина полоски */
+    background-color: #DBDBDB /* Цвет полоски */
+}
+
+.button {
+    margin-top: .5rem;
+}
