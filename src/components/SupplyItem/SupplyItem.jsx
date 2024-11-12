@@ -8,7 +8,7 @@ const SupplyItem = () => {
         <h1 className={styles.customer}>от ПЭК</h1>
         <span className={styles.date}>от 21.03.2024</span>
       </div>
-      <span>12 товаров</span>
+      <span className={styles.count}>12 товаров</span>
     </div>
   );
 };

@@ -1,17 +1,29 @@
-/***
-    The new CSS reset - version 1.11.2 (last updated 15.11.2023)
-    GitHub page: https://github.com/elad2412/the-new-css-reset
-***/
+@font-face {
+    font-family: "Qanelas Medium";
+    src: url("./assets/fonts/Qanelas-Medium.ttf") ;
+}
 
-/*
-    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
-    - The "symbol *" part is to solve Firefox SVG sprite bug
-    - The "html" element is excluded, otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
- */
+@font-face {
+    font-family: "Qanelas SemiBold";
+    src: url("./assets/fonts/Qanelas-SemiBold.ttf")
+}
+
+@font-face {
+    font-family: "Qanelas Regular";
+    src: url("./assets/fonts/Qanelas-Regular.ttf");
+}
+
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
     all: unset;
     display: revert;
     /*transition: all 0.5s ease-in-out;*/
+}
+
+.app {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 /* Preferred box-sizing value */
@@ -27,7 +39,6 @@ html {
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
     font-size: 24px;
-
     scroll-behavior: smooth;
     scroll-snap-align: end;
 }
@@ -210,7 +221,7 @@ legend {
 }
 
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: "Qanelas Regular" ;
     /*font-weight: 700;*/
     font-size: 20px;
     overflow-x: hidden;

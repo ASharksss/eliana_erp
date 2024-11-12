@@ -10,7 +10,6 @@ const MenuItem = ({text, image}) => {
         <img className={styles.image} src={image} alt=""/>
         <span>{text}</span>
       </div>
-
       <img src={arrow} alt=""/>
     </button>
   );
