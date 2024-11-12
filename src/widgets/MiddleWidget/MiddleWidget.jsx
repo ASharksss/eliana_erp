@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './widget.module.css'
 import SupplyItem from "../../components/SupplyItem/SupplyItem";
-import WidgetButton from "../../ui/button/WidgetButton";
+import WidgetButton from "../../ui/WidgetButton/WidgetButton";
 
-const MiddleWidget = ({title, type}) => {
+const MiddleWidget = ({title, type, link}) => {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>{title}</h2>
@@ -11,7 +11,7 @@ const MiddleWidget = ({title, type}) => {
       <SupplyItem/>
       <SupplyItem/>
       <div className={styles.button}>
-        <WidgetButton/>
+        <WidgetButton link={link}/>
       </div>
 
     </div>

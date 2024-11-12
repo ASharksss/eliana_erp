@@ -8,7 +8,7 @@ const MenuItem = ({text, image}) => {
     <button className={styles.container}>
       <div className={styles.menu_item_block}>
         <img className={styles.image} src={image} alt=""/>
-        <span>{text}</span>
+        <span className={styles.text}>{text}</span>
       </div>
       <img src={arrow} alt=""/>
     </button>

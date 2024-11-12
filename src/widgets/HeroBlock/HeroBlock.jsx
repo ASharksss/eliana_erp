@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './her_block.module.css'
-import WidgetButton from "../../ui/button/WidgetButton";
+import WidgetButton from "../../ui/WidgetButton/WidgetButton";
 import HeroItem from "./HeroItem";
 
 const HeroBlock = () => {
@@ -18,7 +18,7 @@ const HeroBlock = () => {
         </div>
       </div>
       <div>
-        <WidgetButton/>
+        <WidgetButton link={"/stock"}/>
       </div>
     </div>
 

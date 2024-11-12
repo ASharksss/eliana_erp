@@ -12,9 +12,9 @@ const DesktopHomePage = () => {
       </div>
       <HeroBlock/>
       <div className={styles.middle_container}>
-        <MiddleWidget title={"Отгрузки"} />
-        <MiddleWidget title={"Отгрузки"}/>
-        <MiddleWidget title={"Отгрузки"}/>
+        <MiddleWidget title={"Отгрузки"} link={"/shipment"}/>
+        <MiddleWidget title={"Поставки"} link={"/supplies"}/>
+        <MiddleWidget title={"Заказы"} link={"/orders"}/>
       </div>
 
     </div>

@@ -4,6 +4,7 @@ import './App.css'
 import {useWindowWidth} from "./hooks/useWindowWidth";
 import Layout from "./Layout/Layout";
 import {Routes, BrowserRouter, Route} from "react-router-dom";
+import SupplyListPage from "./pages/SupplyListPage/SupplyListPage";
 
 function App() {
   const isMobile = useWindowWidth()
@@ -15,6 +16,9 @@ function App() {
         <Routes>
           <Route path={"/"} element={<Layout/>}>
             <Route path={"/"} element={isMobile ? <MobileHomePage/> : <DesktopHomePage/>}/>
+            <Route path={"/orders"} element={<SupplyListPage/>}/>
+            <Route path={"/shipment"} element={<SupplyListPage/>}/>
+            <Route path={"/supplies"} element={<SupplyListPage/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
