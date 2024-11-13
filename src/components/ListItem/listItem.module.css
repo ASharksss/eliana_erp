@@ -1,0 +1,16 @@
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #DBDBDB;
+    box-shadow: 0 0 5px 0 #00000026;
+    padding: .5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    max-width: 110px;
+    text-align: center;
+}
+

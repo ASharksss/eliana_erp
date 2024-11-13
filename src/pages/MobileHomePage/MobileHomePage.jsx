@@ -10,7 +10,7 @@ const MobileHomePage = () => {
         <h1 className={styles.good_morning}>Доброе утро, Username</h1>
         <span className={styles.compliment}>Сегодня солнце светит так ярко - прямо как ты! </span>
       </div>
-      <nav className={styles.nav}>
+      <nav>
         <Menu_item image={boxes} text={"Мой склад"}/>
         <Menu_item image={boxes} text={"Мой склад"}/>
         <Menu_item image={boxes} text={"Мой склад"}/>
