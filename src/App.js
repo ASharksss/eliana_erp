@@ -7,10 +7,10 @@ import {Routes, BrowserRouter, Route} from "react-router-dom";
 import SupplyListPage from "./pages/SupplyListPage/SupplyListPage";
 import DetailPage from "./pages/DetailPage/Detail.Page";
 import StockPage from "./pages/StockPage/StockPage";
+import CirclePage from "./pages/CirclePage/CirclePage";
 
 function App() {
   const isMobile = useWindowWidth()
-
 
   return (
     <div className={"app"}>
@@ -23,6 +23,8 @@ function App() {
             <Route path={"/shipment"} element={<SupplyListPage/>}/>
             <Route path={"/supplies"} element={<SupplyListPage/>}/>
             <Route path={"/orders/1"} element={<DetailPage/>}/>
+            <Route path={"/circlePage"} element={<CirclePage/>}/>
+            <Route path={"/tablePage"} element={<DetailPage/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

@@ -5,13 +5,13 @@ import styles from "./stock.module.css";
 const StockPage = () => {
   return (
     <div className={styles.wrapper}>
-      <StockCircle/>
-      <StockCircle/>
-      <StockCircle/>
-      <StockCircle/>
-      <StockCircle/>
-      <StockCircle/>
-      <StockCircle/>
+      <StockCircle text={"Фитиля"} type={"photo"}/>
+      <StockCircle text={"Диффузоры"} type={"photo"}/>
+      <StockCircle text={"Спреи"} type={"photo"}/>
+      <StockCircle text={"Саше"} type={"photo"}/>
+      <StockCircle text={"Наклейки"} type={"table"}/>
+      <StockCircle text={"Химия"} type={"table"}/>
+      <StockCircle text={"Бутылки"} type={"table"}/>
     </div>
   );
 };

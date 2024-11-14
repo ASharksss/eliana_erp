@@ -15,7 +15,8 @@ const Layout = () => {
   let title =
     location.pathname === "/supplies" ? "Поставки" :
       location.pathname === "/shipment" ? "Отгрузки" :
-        location.pathname === "/orders" ? "Заказы" : ""
+        location.pathname === "/orders" ? "Заказы" :
+          location.pathname === "/stock" ? "Склад" : ""
 
   if (!isMobile) {
     return (
